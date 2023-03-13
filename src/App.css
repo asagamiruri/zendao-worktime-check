@@ -1,0 +1,28 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.App {
+  position: absolute;
+  top: 105px;
+  left: 290px;
+}
+
+.App .btns {
+  display: flex;
+  align-items: center;
+}
+
+.App .rest {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.App .noError {
+  color: green;
+  font-weight: 600;
+}
