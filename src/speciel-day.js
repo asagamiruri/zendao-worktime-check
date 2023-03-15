@@ -2,7 +2,7 @@
 export const pastCells = () => {
   const cells = document.querySelectorAll('.cell-day:not(.future)')
   const current = document.querySelector('.cell-day.current')
-  return [...cells, current]
+  return current ? [...cells, current] : [...cells]
 }
 
 // 获取该cell里记录的工时
