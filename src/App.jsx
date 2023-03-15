@@ -22,7 +22,7 @@ const App = () => {
   // 移除已添加的工时提示DOM
   const removeTipNodes = () => {
     const tipNodes = document.querySelectorAll(`.${TIP_NODE_CLASS}`)
-    tipNodes.forEach((tipNode) => {
+    tipNodes.forEach(tipNode => {
       tipNode.parentElement.removeChild(tipNode)
     })
   }
@@ -33,7 +33,7 @@ const App = () => {
 
     const cells = pastCells()
     let complete = true
-    cells.forEach((cell) => {
+    cells.forEach(cell => {
       const cellClass = cell.getAttribute('class').split(' ')
       const timeList = getCellTime(cell)
       const totalTime = timeList.length

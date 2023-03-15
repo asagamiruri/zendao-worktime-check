@@ -6,7 +6,7 @@ export const pastCells = () => {
 }
 
 // 获取该cell里记录的工时
-export const getCellTime = (cell) => {
+export const getCellTime = cell => {
   const day = cell.children[0]
   const content = day.children[1]
   const events = content.children[0]
@@ -14,7 +14,7 @@ export const getCellTime = (cell) => {
   const timeNodeList = Array.from(timeHTMLCollection) // 数组，也可以用解构转换
 
   const timeList = []
-  timeNodeList.forEach((event) => {
+  timeNodeList.forEach(event => {
     const time = event.children[1].innerHTML
     timeList.push(Number(time.split('h')[0]))
   })
@@ -22,6 +22,6 @@ export const getCellTime = (cell) => {
 }
 
 // 是否是周末（根据cell的class判断）
-export const isWeekend = (cellClass) => {
-  return cellClass.filter((item) => item === 'weekend-day').length > 0
+export const isWeekend = cellClass => {
+  return cellClass.filter(item => item === 'weekend-day').length > 0
 }
