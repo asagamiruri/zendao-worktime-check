@@ -15,7 +15,7 @@ chrome扩展程序安装 Tampermonkey
 
 ### 脚手架
 使用 [vite-plugin-monkey](https://github.com/lisonge/vite-plugin-monkey "vite-plugin-monkey")。
-使用方式参照文档，这里使用 react + js 开发
+使用方式参照文档和[这篇](https://segmentfault.com/a/1190000042187217?sort=newest)，这里使用 react + js 开发
 
 ### 项目启动
 [油猴脚本中引用的 localhost 域下脚本，一般情况下是不能在一个正常网页下运行的，会违反浏览器与网站的安全策略（CSP）](https://www.bilibili.com/read/cv13278537)
