@@ -1,13 +1,6 @@
 import { useEffect, useState } from 'react'
-import { pastCells, getCellTime, isWeekend } from './speciel-day'
+import { pastCells, getCellTime, isWeekend } from './utils/speciel-day'
 import './App.css'
-
-/**
- * TODO
- * 1. 添加节假日判断
- * 2. 添加加班判断
- * 3. (待检测)添加工时全部正常提示
- */
 
 const App = () => {
   const TIP_NODE_CLASS = 'incomplete'
